@@ -1,0 +1,16 @@
+{
+  "name": "cgm-matrix-patchbay",
+  "version": "1.0.0",
+  "description": "CGM Matrix PatchBay – AI orchestration using Node-RED",
+  "main": "launcher.js",
+  "scripts": {
+    "start": "node launcher.js",
+    "build:windows": "pkg launcher.js --targets node18-win-x64 --output dist/windows/CGM-Matrix-PatchBay.exe"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "@octokit/rest": "^20.0.0",
+    "node-red": "^3.1.0",
+    "pkg": "^5.11.0"
+  }
+}
